@@ -18,15 +18,13 @@ async def start(client, message):
     user = message.from_user
     if not await db.is_user_exist(user.id):
         await db.add_user(user.id)             
-    txt=f"👋 Hello Developer {user.mention} \n\nI am an Advance file Renamer and file Converter BOT with Custom thumbnail support.\n\nSend me any video or document !"
+    txt=f"Hᴀɪ {user.mention}♡゙,\n\n◈ I Aᴍ A Pᴏᴡᴇʀғᴜʟ Fɪʟᴇ Rᴇɴᴀᴍᴇʀ Bᴏᴛ.\n◈ I Cᴀɴ Rᴇɴᴀᴍᴇ Fɪʟᴇs, Cʜᴀɴɢᴇ Tʜᴜᴍʙɴᴀɪʟs, Cᴏɴᴠᴇʀᴛ Bᴇᴛᴡᴇᴇɴ Vɪᴅᴇᴏ Aɴᴅ Fɪʟᴇ, Aɴᴅ Sᴜᴘᴘᴏʀᴛ Cᴜsᴛᴏᴍ Tʜᴜᴍʙɴᴀɪʟs Aɴᴅ Cᴀᴘᴛɪᴏɴs.\n\n• Mᴀɪɴᴛᴀɪɴᴇᴅ Bʏ : @Tonystark_botz"
     button=InlineKeyboardMarkup([[
-        InlineKeyboardButton(" Developer ", url='https://t.me/Tony_Stark_75')
+        InlineKeyboardButton('⚡ Updates', url='https://t.me/Tonystark_botz'),
+        InlineKeyboardButton('⚡ Support', url='https://t.me/MovieTimesXDisc')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/Tonystark_botz'),
-        InlineKeyboardButton(' Support', url='https://t.me/MovieTimesXDisc')
-        ],[
-        InlineKeyboardButton(' About', callback_data='about'),
-        InlineKeyboardButton(' Help', callback_data='help')
+        InlineKeyboardButton('✨ About', callback_data='about'),
+        InlineKeyboardButton('⚙️ Help', callback_data='help')
         ],[
         InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/MovieTimes_TV')
         ],[
@@ -74,13 +72,11 @@ async def cb_handler(client, query: CallbackQuery):
         await query.message.edit_text(
             text=f"""👋 Hello Developer {query.from_user.mention} \n\nI am an Advance file Renamer and file Converter BOT with permanent and custom thumbnail support.\n\nSend me any video or document !""",
             reply_markup=InlineKeyboardMarkup( [[
-        InlineKeyboardButton(" Developer ", url='https://t.me/Tony_Stark_75')
+        InlineKeyboardButton('⚡ Updates', url='https://t.me/Tonystark_botz'),
+        InlineKeyboardButton('⚡ Support', url='https://t.me/MovieTimesXDisc')
         ],[
-        InlineKeyboardButton(' Updates', url='https://t.me/Tonystark_botz'),
-        InlineKeyboardButton(' Support', url='https://t.me/MovieTimesXDisc')
-        ],[
-        InlineKeyboardButton(' About', callback_data='about'),
-        InlineKeyboardButton(' Help', callback_data='help')
+        InlineKeyboardButton('✨ About', callback_data='about'),
+        InlineKeyboardButton('⚙️ Help', callback_data='help')
         ],[
         InlineKeyboardButton(" Join Our Movie Channel !", url='https://t.me/MovieTimes_TV')
         ],[
