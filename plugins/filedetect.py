@@ -20,7 +20,7 @@ async def refunc(client, message):
               extn = media.file_name.rsplit('.', 1)[-1]
           else:
               extn = "mkv"
-          new_file_name = "new_file_name.ext"  # Provide the new file name with appropriate extension
+          new_name = new_name ++ extn
        await reply_message.delete()
 
        button = [[InlineKeyboardButton("📁 𝙳𝙾𝙲𝚄𝙼𝙴𝙽𝚃𝚂",callback_data = "upload_document")]]
@@ -29,6 +29,6 @@ async def refunc(client, message):
        elif file.media == MessageMediaType.AUDIO:
            button.append([InlineKeyboardButton("🎵 𝙰𝙾𝚄𝙳𝙸𝙾",callback_data = "upload_audio")])
        await message.reply_text(
-          f"**Select the output file type**\n**• File Name :-**```{new_name}```",
+          f"**Select the output file type**\n**• File Name :-**```{new_file_name}```",
           reply_to_message_id=file.id,
           reply_markup=InlineKeyboardMarkup(button))
