@@ -36,7 +36,7 @@ async def doc(bot,update):
      new_filename = new_name.split(":-")[1]
      file_path = f"downloads/{new_filename}"
      file = update.message.reply_to_message
-     ms = await update.message.edit("Tʀʏɪɴɢ ᴛᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ")
+     ms = await update.message.edit("Tʀʏɪɴɢ ᴛᴏ Dᴏᴡɴʟᴏᴀᴅɪɴɢ...")
      c_time = time.time()
      try:
      	path = await bot.download_media(message = file, progress=progress_for_pyrogram,progress_args=( "\nDᴏᴡɴʟᴏᴀᴅ Sᴛᴀʀᴛᴇᴅ....",  ms, c_time   ))
