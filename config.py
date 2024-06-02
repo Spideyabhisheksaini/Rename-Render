@@ -23,7 +23,7 @@ DB_NAME = os.environ.get("DB_NAME", "Missminutes")
 
 DB_URL = os.environ.get("DB_URL", "mongodb+srv://Tonystarkbotz:Tonystarkbotz@missminutes.lbzdtkj.mongodb.net/?retryWrites=true&w=majority&appName=Missminutes")
  
-FLOOD = int(os.environ.get("FLOOD", "0"))
+FLOOD = int(os.environ.get("FLOOD", "10"))
 
 START_PIC = os.environ.get("START_PIC", "https://graph.org/file/8df4d54ad838879691cf6.jpg")
 
